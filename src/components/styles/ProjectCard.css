@@ -1,0 +1,10 @@
+.card-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 15vw;
+}
+
+.content-div {
+    margin-left: 20px;
+}
