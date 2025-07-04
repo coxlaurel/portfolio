@@ -16,7 +16,6 @@ function useScrollSpy() {
     const callback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // ✅ Try writing: if entry.target === aboutRef.current then setCurrentSection("about")
           if (entry.target === aboutRef.current) {
             setCurrentSection("about")
           }
@@ -32,12 +31,10 @@ function useScrollSpy() {
 
     const observer = new IntersectionObserver(callback, options);
 
-    // ✅ Try writing: observer.observe(aboutRef.current), etc.
     if (aboutRef.current) observer.observe(aboutRef.current);
     if (experienceRef.current) observer.observe(experienceRef.current);
     if (projectsRef.current) observer.observe(projectsRef.current);
 
-    // 💡 Bonus: cleanup
     return () => observer.disconnect();
   }, []);
 
