@@ -1,8 +1,8 @@
 import './styles/NavBar.css';
-import { FaStar } from 'react-icons/fa';
+// import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import { MouseEvent } from 'react';
-import { useState } from 'react';
+import type { MouseEvent } from 'react';
+// import { useState } from 'react';
 
 function NavBar({ currentSection }: { currentSection: string }) {
   let items = ["about", "experience", "projects"]

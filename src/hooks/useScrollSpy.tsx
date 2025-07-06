@@ -13,7 +13,7 @@ function useScrollSpy() {
       threshold: 0.5,
     };
 
-    const callback = (entries) => {
+    const callback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (entry.target === aboutRef.current) {

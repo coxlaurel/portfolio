@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import useScrollSpy from './hooks/useScrollSpy';
 import Cursor2 from './components/Cursor2';
 
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function App() {
   const {
@@ -17,10 +17,11 @@ function App() {
     projectsRef,
   } = useScrollSpy();
 
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
   
   return <div>
-    <Cursor2 isActive={isActive}/>
+    <Cursor2 /> 
+    {/* isActive={isActive} */}
     <div className='nav-content-container'>
       <div className='left-bar-container'>
         <div>
