@@ -8,7 +8,7 @@ html, body {
 body {
     font-family: "Noto Sans Mono", monospace;
     color: #212227;
-    background-image: linear-gradient(to bottom, #D7D3FF 33%, #608741 38%, #608741 67%, #FFBAD4 70%);
+    background-image: linear-gradient(to bottom, #D7D3FF 33%, #9ad4db 38%, #B3F6FF 67%, #FFBAD4 70%);
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -19,17 +19,22 @@ body {
     justify-content: space-evenly;
 }
 
-.nav-bar-container {
+.left-bar-container {
     /* max-width: 360px; */
     position: sticky;
     top: 8vh;
-    height: fit-content;
+    /* bottom: 8vh;; */
+    height: 82vh;
     flex-shrink: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: solid red; */
 }
 
 section {
     max-width: 650px;
     padding-top: 10vh;
-    border: solid black;
+    /* border: solid black; */
 }
